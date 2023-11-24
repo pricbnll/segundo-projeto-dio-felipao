@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 2 do Felipão DIO</title>
+</head>
+<body>
+    
+
+    <script>
+
+
+
+
+let userName = prompt("Digite seu nome, por favor.");
+let vitoria = Number(prompt(`Digite quantas vitórias obteve, ${userName}?`));
+let derrota = Number(prompt(`Digite quantas derrotas obteve, ${userName}?`));
+
+let saldoVitorias = userNumbers(vitoria, derrota);
+let nivel = ""
+
+if (saldoVitorias < 10) {
+   nivel = "Ferro";
+} else if (saldoVitorias > 11 && saldoVitorias < 20) { 
+    nivel = "Bronze";
+} else if (saldoVitorias > 21 && saldoVitorias < 50) {
+   nivel = "Prata";
+} else if (saldoVitorias > 51 && saldoVitorias < 80) {
+   nivel = "Ouro";
+} else if (saldoVitorias > 81 && saldoVitorias < 90) {
+   nivel = "Diamante";
+} else if (saldoVitorias > 91 && saldoVitorias < 100) {
+   nivel = "Lendário";
+} else if (saldoVitorias >= 101) {
+   nivel = "Mortal";
+}   
+
+
+function userNumbers(vitoria, derrota) {
+    let resultadoRankeado = vitoria - derrota
+    return resultadoRankeado 
+} 
+
+alert (`O Herói tem saldo de ${saldoVitorias} está no nível ${nivel}`)
+
+    </script>
+</body>
+</html>
