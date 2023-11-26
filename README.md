@@ -30,4 +30,11 @@ Ao final deve se exibir uma mensagem:
 
 ### Como fiz:
 
+Fiz com pop-up e JavaScript no HTML. 
+
+
 ### O que aprendi:
+
+A ler o código e saber como será lido pelo JavaScript. Quem e qual variável será executada e quando!
+
+Não usei nenhuma estrutura HTML e não acho nencessário aqui. Poderia fazer com o DOM mas ainda não quis por medo kkkk
